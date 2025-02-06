@@ -1,3 +1,4 @@
+package edu.rafael.primeirasemana;
 public class BoletimEstudante {
     public static void main(String[] args) {
         int mediaFinal = 7;
