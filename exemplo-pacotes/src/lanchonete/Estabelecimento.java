@@ -1,18 +1,23 @@
-import atendimento.cozinha.Almoxarife;
+
+import area.cliente.Cliente;
+import atendimento.Atendente;
 import atendimento.cozinha.Cozinheiro;
 
 public class Estabelecimento {
-public static void main(String[] args) {
-    Cozinheiro cozinheiro = new Cozinheiro();
+    public static void main(String[] args) {
+        Cozinheiro cozinheiro = new Cozinheiro();
+        //ações que o estabelecimento precisa ter conhecimento...
+        cozinheiro.adicionarSucoNoBalcao();
+        cozinheiro.adicionarLancheNoBalcao();
+        cozinheiro.adicionarComboNoBalcao();
 
-    //ações que não precisam estar visíveis a todos...
-    cozinheiro.adicionarLancheNoBalcao();
+        Atendente atendente = new Atendente();
+        atendente.servindoMesa();
+        atendente.receberPagamento();
 
-    Almoxarife almoxarife = new Almoxarife();
-    //ações que não precisam estar visíveis para toda a aplicação...
-    almoxarife.controlarEntrada();
-    //ações que somento o pacote 'cozinha' precisa conhecer...
-    almoxarife.entregarIngredientes();
-    almoxarife.trocarGas();
-}
+        Cliente cliente = new Cliente();
+        cliente.escolherLanche();
+        cliente.fazerPedido();
+        cliente.pagarConta();       
+    }
 }
