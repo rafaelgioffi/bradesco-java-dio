@@ -7,7 +7,7 @@ public class Main {
     private final static Scanner sc = new Scanner(System.in);
     private final static PetMachine petMachine = new PetMachine();
 
-    public static String petName;
+    public static String petName = "";
 
     public static void main(String[] args) {
 
@@ -29,15 +29,31 @@ public class Main {
             opcao = sc.nextInt();
 
             switch (opcao) {
+                case 0 -> {
+                    System.out.println("******************************************");
+                    System.out.println("* Obrigado por utilizar nossos serviços! *");
+                    System.out.println("******************************************");
+                }
+                case 4 -> getWater();
+                case 5 -> getShampoo();
                 case 7 -> setPetInMachine();
+
             }
     }
         while (opcao != 0);
     }
 
+    public static void getWater() {
+        System.out.println("** Nível atual de água: " + petMachine.getWater());
+        System.out.println();
+    }
+public static void getShampoo() {
+        System.out.println("** Nível atual de Shampoo: " + petMachine.getShampoo());
+        System.out.println();
+    }
+
     public static void setPetInMachine() {
-        var name = "";
-        while (name == null || name.isEmpty()) {
+        while (petName == null || petName.isEmpty()) {
             System.out.print("Informe o nome do Pet: ");
             petName = sc.next();
         }
