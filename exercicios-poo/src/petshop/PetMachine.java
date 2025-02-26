@@ -68,17 +68,11 @@ public class PetMachine {
         this.pet = pet;
     }
 
-    public void throwPet(Pet pet) {
-        if (!hasPet()) {
-            System.out.println(pet.getName() + " não está na máquina...");
-            return;
+    public void throwPet() {
+        this.clean = this.pet.isClean();
+            System.out.println("O(a) pet " + this.pet.getName() + " está limpo.");
+            this.pet = null;
         }
-        else if (hasPet()) {
-            System.out.println(pet.getName() + " retirado da máquina.");
-            setClean(false);
-            return;
-        }
-    }
 
     public void cleanMachine() {
         this.water -= 10;
