@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Funcionario {
+    Scanner sc = new Scanner(System.in);
+
     private String nome;
     private String email;
     private String senha;

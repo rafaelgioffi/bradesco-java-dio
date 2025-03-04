@@ -4,6 +4,12 @@ public class Ingresso {
     private String tipoFilme;
     private String tipoIngresso;
 
+    public Ingresso(String filme, double valor, String tipoFilme) {
+        this.filme = filme;
+        this.valor = valor;
+        this.tipoFilme = tipoFilme;
+    }
+
     public String getFilme() {
         return filme;
     }

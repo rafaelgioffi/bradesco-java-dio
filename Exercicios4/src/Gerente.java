@@ -11,9 +11,4 @@ public double ConsultarVendas() {
     return 0;
 }
 
-public void alterarSenha(Funcionario funcionario) {
-
-}
-
-
 }

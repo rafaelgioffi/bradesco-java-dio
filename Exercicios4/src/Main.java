@@ -5,6 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int opcao = -1;
 
+        //Ingresso ingresso = new Ingresso();
         Gerente gerente = new Gerente();
 
         while (opcao != 0) {
