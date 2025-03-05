@@ -5,6 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int opcao = -1;
 
+        Relogio relogioBr = new RelogioPtBr();
+        relogioBr.setSegundo(16);
+        relogioBr.setMinuto(35);
+        relogioBr.setHora(8);
+        System.out.println(relogioBr.getTime());
+        System.out.println(new RelogioEnUs().converter(relogioBr).getTime());
+
         //Ingresso ingresso = new Ingresso();
         Gerente gerente = new Gerente();
 
