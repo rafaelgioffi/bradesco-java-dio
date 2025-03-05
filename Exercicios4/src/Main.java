@@ -8,7 +8,7 @@ public class Main {
         Relogio relogioBr = new RelogioPtBr();
         relogioBr.setSegundo(16);
         relogioBr.setMinuto(35);
-        relogioBr.setHora(8);
+        relogioBr.setHora(13);
         System.out.println(relogioBr.getTime());
         System.out.println(new RelogioEnUs().converter(relogioBr).getTime());
 
