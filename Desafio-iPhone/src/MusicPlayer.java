@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Music {
+public class MusicPlayer {
     private static Scanner sc = new Scanner(System.in);
     private static String music;
 

@@ -26,13 +26,16 @@ public class iPhone {
 
             switch (option) {
                 case 11 -> {
-                    System.out.println(Music.iPod_playMusic());
+                    System.out.println(MusicPlayer.iPod_playMusic());
                 }
                 case 12 -> {
-                    System.out.println(Music.iPod_pauseMusic());
+                    System.out.println(MusicPlayer.iPod_pauseMusic());
                 }
                 case 13 -> {
-                    System.out.println(Music.iPod_select());
+                    System.out.println(MusicPlayer.iPod_select());
+                }
+                case 21 -> {
+                    System.out.println(Phone.Call());
                 }
                 default -> {
                     System.out.println("Opção inválida!");
