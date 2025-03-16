@@ -35,7 +35,10 @@ public class iPhone {
                     System.out.println(MusicPlayer.iPod_select());
                 }
                 case 21 -> {
-                    System.out.println(Phone.Call());
+                    System.out.println(Phone.call());
+                }
+                case 22 -> {
+                    System.out.println(Phone.awnser());
                 }
                 default -> {
                     System.out.println("Opção inválida!");
