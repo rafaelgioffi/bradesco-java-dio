@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class iPhone {
         private static Scanner sc = new Scanner(System.in);
-        private static Music music = new Music();
 
     public static void main(String[] args) {
         int option = 0;
@@ -27,13 +26,13 @@ public class iPhone {
 
             switch (option) {
                 case 11 -> {
-                    System.out.println(iPod_playMusic());
+                    System.out.println(Music.iPod_playMusic());
                 }
                 case 12 -> {
-                    System.out.println(iPod_pauseMusic());
+                    System.out.println(Music.iPod_pauseMusic());
                 }
                 case 13 -> {
-                    System.out.println(iPod_select());
+                    System.out.println(Music.iPod_select());
                 }
                 default -> {
                     System.out.println("Opção inválida!");
@@ -42,34 +41,4 @@ public class iPhone {
         }
     }
 
-    private static String iPod_playMusic() {
-        if (music.getMusic() == null) {
-            System.out.println("Selecione uma música antes...");
-            iPod_select();
-            return " ";
-        }
-        else {
-        return "\nTocando a música '" + music.getMusic() + "'...\n";
-        }
-    }
-
-private static String iPod_pauseMusic() {
-        if (music.getMusic() == null) {
-            System.out.println("Selecione uma música antes...");
-            iPod_select();
-            return " ";
-        }
-        else {
-        return "\nMúsica '" + music.getMusic() + "' pausada...\n";
-        }
-    }
-
-        private static String iPod_select() {
-            System.out.print("Qual música você quer ouvir? ");
-            sc.nextLine();
-            var musicName = sc.nextLine();
-            music.setMusic(musicName);
-
-            return "\nMúsica '" + music.getMusic() + "' selecionada!\n";
-        }
 }
