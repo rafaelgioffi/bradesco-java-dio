@@ -20,8 +20,9 @@ public class iPhone {
             System.out.println("\n Safari Web Browser");
             System.out.println("   31 - Abrir Website");
             System.out.println("   32 - Nova Aba");
-            System.out.println("   32 - Nova Aba");
-            System.out.print("Escolha a opção => ");
+            System.out.println("   33 - Atualizar Website");
+            System.out.println("   34 - Parar Website");
+            System.out.print("\nEscolha a opção => ");
             option = sc.nextInt();
 
             switch (option) {
@@ -39,6 +40,12 @@ public class iPhone {
                 }
                 case 22 -> {
                     System.out.println(Phone.awnser());
+                }
+                case 23 -> {
+                    System.out.println(Phone.voiceMail());
+                }
+                case 31 -> {
+                    System.out.println(WebBrowser.openWebsite());
                 }
                 default -> {
                     System.out.println("Opção inválida!");
