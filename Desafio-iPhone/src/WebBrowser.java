@@ -33,27 +33,44 @@ public class WebBrowser {
         if (checkWebsite()) {
             return "\nAbrindo " + website + "...";
         }
-        return "\nTente novamente...";
+        else {
+            return "\nTente novamente...";
+        }
     }
 
     public static String newTab() {
+        website = null;
         return "\nNova aba aberta!\n";
     }
 
-    private static String updateWebsite() {
+    public static String updateWebsite() {
         String resp = "";
-        if (checkWebsite()) {
-            System.out.println("\nCerteza que deseja atualizar o website " + website + "? 'S' para SIM ou 'N' para NÃO: ");
+        if (website != null) {
+            System.out.print("\nCerteza que deseja atualizar o website " + website + "? 'S' para SIM ou 'N' para NÃO: ");
             String option = sc.next().toLowerCase();
 
-            if (option == "s") {
-                resp = "\n" + website + " atualizado!";
+            if (option.equals("s")) {
+                resp = "\n" + website + " atualizado!\n";
+            } else {
+                resp = "\n" + website + " não atualizado...\n";
             }
-            else {
-                resp = "\n" + website + " não atualizado...";
-            }
+        }
+        else {
+            resp = "\nNenhum website carregado para atualizar!\n";
         }
         return resp;
     }
+
+    public static String stopWebsite() {
+        String resp = "";
+        if (website != null) {
+            resp = "\nCarregamento do " + website + " interrompido!";
+        }
+        else {
+            resp = "\nNão há Website carregando para parar!\n";
+        }
+        return resp;
+    }
+
 }
 

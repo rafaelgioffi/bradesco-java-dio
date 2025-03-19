@@ -50,10 +50,17 @@ public class iPhone {
                 case 32 -> {
                     System.out.println(WebBrowser.newTab());
                 }
+                case 33 -> {
+                    System.out.println(WebBrowser.updateWebsite());
+                }
+                case 34 -> {
+                    System.out.println(WebBrowser.stopWebsite());
+                }
                 default -> {
                     System.out.println("Opção inválida!");
                 }
             }
+
         }
     }
 
