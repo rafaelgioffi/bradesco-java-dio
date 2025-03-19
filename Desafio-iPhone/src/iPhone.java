@@ -47,6 +47,9 @@ public class iPhone {
                 case 31 -> {
                     System.out.println(WebBrowser.openWebsite());
                 }
+                case 32 -> {
+                    System.out.println(WebBrowser.newTab());
+                }
                 default -> {
                     System.out.println("Opção inválida!");
                 }

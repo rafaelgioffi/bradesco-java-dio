@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class WebBrowser {
@@ -7,11 +9,9 @@ public class WebBrowser {
 
     public static boolean checkWebsite() {
         if (website == null) {
-
+            openWebsite();
+        } else {
             while (!validSite) {
-                System.out.print("Qual Website deseja visitar? ");
-                website = sc.next();
-
                 if (!website.toLowerCase().contains("http://") && !website.toLowerCase().contains("https://")) {
                     System.out.println("Website inválido!\n");
                     validSite = false;
@@ -23,16 +23,37 @@ public class WebBrowser {
                 }
             }
         }
-            return validSite;
+        return validSite;
     }
 
     public static String openWebsite() {
+        System.out.print("Qual Website deseja visitar? ");
+        website = sc.next();
+
         if (checkWebsite()) {
-                return "\nAbrindo " + website + "...";
+            return "\nAbrindo " + website + "...";
         }
         return "\nTente novamente...";
     }
 
+    public static String newTab() {
+        return "\nNova aba aberta!\n";
+    }
 
+    private static String updateWebsite() {
+        String resp = "";
+        if (checkWebsite()) {
+            System.out.println("\nCerteza que deseja atualizar o website " + website + "? 'S' para SIM ou 'N' para NÃO: ");
+            String option = sc.next().toLowerCase();
+
+            if (option == "s") {
+                resp = "\n" + website + " atualizado!";
+            }
+            else {
+                resp = "\n" + website + " não atualizado...";
+            }
+        }
+        return resp;
+    }
 }
 
