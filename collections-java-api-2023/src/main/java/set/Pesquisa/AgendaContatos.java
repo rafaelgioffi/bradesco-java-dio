@@ -19,7 +19,7 @@ public class AgendaContatos {
     if (!contatosSet.isEmpty()) {
       System.out.println(contatosSet);
     } else {
-      System.out.println("O conjunto está vazio!");
+      System.out.println("A agenda está vazia...");
     }
   }
 

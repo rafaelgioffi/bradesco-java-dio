@@ -12,7 +12,7 @@ public class ConjuntoConvidados {
 
     public void adicionarConvidado(String nome, int codigoConvidado) {
         convidadoSet.add(new Convidado(nome, codigoConvidado));
-        System.out.println("Convidado(a) " + nome + " adicionado(a) a lista!");
+        System.out.println("Convidado(a) '" + nome + "' adicionado(a) a lista!");
     }
 
     public void removerConvidadoPorCodigoConvite (int codigoConvite) {
