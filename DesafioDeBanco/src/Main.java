@@ -60,27 +60,27 @@ public class Main {
                 }
 
                 case 4: {
-                    while (tipoConta != "cp" && tipoConta != "cc") {
+                    while (tipoConta == null) {
                         System.out.println("Qual conta deseja utilizar?");
                         System.out.println("'cc' => Conta Corrente\n'cp' => Conta Poupança");
                         System.out.print("Escolha: ");
                         tipoConta = sc.next().toLowerCase();
                     }
                     String trocarConta = null;
-                    if (tipoConta == "cc") {
+                    if (tipoConta.equals("cc")) {
                         System.out.print("Conta Corrente selecionada. Deseja trocar?\n's' para Sim\n'n' para Não: ");
                         trocarConta = sc.next().toLowerCase();
 
-                        if (trocarConta == "s") {
+                        if (trocarConta.equals("s")) {
                             tipoConta = "cp";
                         }
                         break;
                     }
-                    else if (tipoConta == "cp") {
+                    else if (tipoConta.equals("cp")) {
                         System.out.print("Conta Poupança selecionada. Deseja trocar?\n's' para Sim\n'n' para Não: ");
                         trocarConta = sc.next().toLowerCase();
 
-                        if (trocarConta == "s") {
+                        if (trocarConta.equals("s")) {
                             tipoConta = "cc";
                         }
                     }
