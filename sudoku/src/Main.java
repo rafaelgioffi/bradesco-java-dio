@@ -42,6 +42,7 @@ public class Main {
                 case 1 -> StartGame(positions);
                 case 2 -> InputNumber();
                 case 3 -> RemoveNumber();
+                case 4 -> ViewGame();
                 case 0 -> System.exit(0);
                 default -> System.out.println("Opção inválida!");
             }
