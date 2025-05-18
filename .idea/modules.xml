@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AboutMe/AboutMe.iml" filepath="$PROJECT_DIR$/AboutMe/AboutMe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bradesco Java Cloud Native.iml" filepath="$PROJECT_DIR$/.idea/Bradesco Java Cloud Native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControleCandidatos/ControleCandidatos.iml" filepath="$PROJECT_DIR$/ControleCandidatos/ControleCandidatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desafio-iPhone/Desafio-iPhone.iml" filepath="$PROJECT_DIR$/Desafio-iPhone/Desafio-iPhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" filepath="$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicio5/Exercicio5.iml" filepath="$PROJECT_DIR$/Exercicio5/Exercicio5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicios4/Exercicios4.iml" filepath="$PROJECT_DIR$/Exercicios4/Exercicios4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mensageiros/Mensageiros.iml" filepath="$PROJECT_DIR$/Mensageiros/Mensageiros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pessoa/Pessoa.iml" filepath="$PROJECT_DIR$/Pessoa/Pessoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServicosDigitalizacao/ServicosDigitalizacao.iml" filepath="$PROJECT_DIR$/ServicosDigitalizacao/ServicosDigitalizacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Veiculos/Veiculos.iml" filepath="$PROJECT_DIR$/Veiculos/Veiculos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exemplo-pacotes/src/com/com.iml" filepath="$PROJECT_DIR$/exemplo-pacotes/src/com/com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dio-trilha-java-basico/dio-trilha-java-basico.iml" filepath="$PROJECT_DIR$/dio-trilha-java-basico/dio-trilha-java-basico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exemplo-pacotes/src/exemplo-pacotes.iml" filepath="$PROJECT_DIR$/exemplo-pacotes/src/exemplo-pacotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios-poo/exercicios-poo.iml" filepath="$PROJECT_DIR$/exercicios-poo/exercicios-poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functional-interfaces/functional-interfaces.iml" filepath="$PROJECT_DIR$/functional-interfaces/functional-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interfaces_Lambda/interfaces_Lambda.iml" filepath="$PROJECT_DIR$/interfaces_Lambda/interfaces_Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-anatomia-classes/java-anatomia-classes.iml" filepath="$PROJECT_DIR$/java-anatomia-classes/java-anatomia-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/primeiro-projeto-java/primeiro-projeto-java.iml" filepath="$PROJECT_DIR$/primeiro-projeto-java/primeiro-projeto-java.iml" />
+    </modules>
+  </component>
+</project>
