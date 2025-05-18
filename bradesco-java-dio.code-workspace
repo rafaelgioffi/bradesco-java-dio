@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"exemplo-pacotes/src/lanchonete",
+			"exemplo-pacotes/src/escola",
+			"DesafioControleFluxo/src",
+			"ControleCandidatos/src",
+			"Pessoa/src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		]
+	}
+}
