@@ -155,8 +155,8 @@ public class Main {
 
         System.out.println("Tem certeza que deseja limpar o jogo? Todo progresso será perdido! (S/N)");
         var confirm = sc.next();
-        while (!confirm.equalsIgnoreCase("s") || !confirm.equalsIgnoreCase("n")) {
-            System.out.println("Resposta inválida!\ns para Sim\nn para Não");
+        while (!confirm.equalsIgnoreCase("s") && !confirm.equalsIgnoreCase("n")) {
+            System.out.println("Resposta inválida!\nDigite 's' para Sim ou\n'n' para Não");
             confirm = sc.next();
         }
 
