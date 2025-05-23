@@ -10,7 +10,7 @@ import static br.com.dio.util.model.GameStatusEnum.*;
 public class Board {
     private final List<List<Space>> spaces;
 
-    public Board(List<List<Space>> spaces) {
+    public Board(final List<List<Space>> spaces) {
         this.spaces = spaces;
     }
 
@@ -23,7 +23,7 @@ public class Board {
             return NON_STARTED;
         }
 
-        return spaces.stream().flatMap(Collection::stream).anyMatch(s -> isNull(s.getActual())) ? INCOMPLETE : COMPLETED;
+        return spaces.stream().flatMap(Collection::stream).anyMatch(s -> isNull(s.getActual())) ? INCOMPLETE : COMPLETE;
     }
 
     public boolean hasErrors() {
@@ -56,6 +56,6 @@ public class Board {
     }
 
     public boolean gameIsFinished() {
-        return !hasErrors() && getStatus() == COMPLETED;
+        return !hasErrors() && getStatus().equals(COMPLETE);
     }
 }

@@ -7,13 +7,13 @@ public class MainFrame extends JFrame {
 
     public MainFrame(final Dimension dimension, final JPanel mainPanel) {
         super("Sudoku");
-        setSize(dimension);
-        setPreferredSize(dimension);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
-        setLocationRelativeTo(null);
-        setResizable(false);
-        add(mainPanel);
+        this.setSize(dimension);
+        this.setPreferredSize(dimension);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setVisible(true);
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.add(mainPanel);
     }
 
 }

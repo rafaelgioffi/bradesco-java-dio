@@ -1,4 +1,4 @@
-package br.com.dio.util.service;
+package br.com.dio.service;
 
 import br.com.dio.util.model.Board;
 import br.com.dio.util.model.GameStatusEnum;
@@ -12,7 +12,7 @@ public class BoardService {
     private final static int BOARD_LIMIT = 9;
     private final Board board;
 
-    public BoardService(final Map<String, String> gameConfig, final Board board) {
+    public BoardService(final Map<String, String> gameConfig) {
         this.board = new Board(initBoard(gameConfig));
     }
 
