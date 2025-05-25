@@ -3,6 +3,7 @@
 classDiagram
     class User {
         +String name
+        +Account account
     }
 
     class Account {
